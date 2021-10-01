@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+/*
+var str = prompt ("Введите название фигуры ( треугольник, квадрат, пятиугольник) : ");
+var n, sum = 0;
+switch (str) {
+    case"треугольник" : 
+        n = +prompt("Сколько сторон у треугольника ? ");
+            if (n==3) {
+                alert("Правильно ! Теперь считаем его P !")
+            sum += +prompt("Введите 1 сторону треугольника :");
+            sum += +prompt("Введите 2 сторону треугольника :");
+            sum += +prompt("Введите 3 сторону треугольника :");
+            alert ("P вашей фигуры равен" + sum);
+            }
+            else 
+                alert ("Вы не угадали ! У треугольника 3 стороны");
+            break;
+    case"квадрат" :
+        n = +prompt("Сколько сторон у квадрата ? ");
+        if ( n==4){
+            alert("Правильно ! Теперь считаем его P !");
+            for (i = o; i < 4; i++)
+                sum += +prompt("Введите одну из сторон четырехугольника");
+            alert("P четырехугольника равен " + sum);
+        }
+        else
+            alert("Вы не угадали ! ");
+        break;
+    case"пятиугольник" :
+
+        n = +prompt("Сколько сторон у 5ти угольника ? ");
+        if ( n==5){
+            alert("Правильно ! Теперь считаем его P !");
+            for (i = o; i < 5; i++)
+                sum += +prompt("Введите одну из сторон 5тиугольник");
+            alert("P 5тиугольник равен " + sum);
+        }
+        else
+            alert("Вы не угадали ! ");
+        break;
+
+    default : alert("Я не знаю такой фигуры ! ");
+}
+
+
+
+var n, n1; 
+n = +prompt ("Пользователь введи любое число !"); // Задание 1
+if (n == 0 )
+    alert("Вы ввели - 0 !");
+else
+if (n < 0)
+    alert("Вы ввели отрицательное число ! ");
+else
+    alert("Вы ввели положительное число ! ");
+
+
+n = +prompt (" Пользователь 1 число !"); // Задание 2
+n1 = +prompt (" Пользователь 2 число !");
+if (n > n1)
+    alert(n + " больше 2 числа !");
+else 
+    alert(n1 + " больше 1 числа !");
+
+
+
+n = +prompt (" Пользователь введи число !"); // Задание 3
+if (n % 5 == 0)
+    alert ("Кратно 5");
+else
+    alert ("Не кратно 5");
+
+
+n = +prompt (" Пользователь введи свой возраст !"); // Задание 4
+if (n > 0 && n <= 120 )
+    alert ("Данные введены корректно ! ") ;
+else
+    alert("Ошибочный ввод !");
+
+
+n = +prompt (" Пользователь введи число !"); // Задание 5
+if (n >= 0)
+    alert(n);
+else 
+    alert(n * -1);
+
+
+n = +prompt (" Пользователь введи часы  !"); // Задание 6
+n1 = +prompt (" Пользователь введи минуты  !");
+if (n >= 0 && n <= 23 && n1 >= 0 && n1 <= 59)
+    alert("Время введено верно ! ");
+else
+    alert("Время введено не верно ! ");
+
+
+n = prompt (" Пользователь введи название планеты  !"); // Задание 7
+if (n == "Земля" || n == "земля" )
+    alert ("Привет - Землянин !");
+else
+    alert("ИНОПЛАНЕТЯНИН !!!! ");
+
+
+n = +prompt (" Пользователь введи номер месяца  !"); // Задание 1 switch
+switch(n){
+    case 1: alert ("Январь");break;
+    case 2: alert ("Февраль");break;
+    case 3: alert ("Март");break;
+    case 4: alert ("Апрель");break;
+    case 5: alert ("Май");break;
+    case 6: alert ("Июнь");break;
+    case 7: alert ("Июль");break;
+    case 8: alert ("Август");break;
+    case 9: alert ("Сентябрь");break;
+    case 10: alert ("Октябрь");break;
+    case 11: alert ("Ноябрь");break;
+    case 12: alert ("Декабрь");break;
+    default: alert ("Такого месяца нет !");
+}
+
+
+n = +prompt (" Пользователь введи число  !"); // Задание 2 switch
+n1 = +prompt (" Пользователь введи число  !");
+var n2 = prompt (" Пользователь введи знак  !");
+
+switch(n2){
+    case "-": alert(n - n1);break;
+    case "+": alert((n + n1));break;
+    case "/": alert(n / n1);break;
+    case "*": alert(n * n1);break;
+
+}
+*/
+
+/* 
+var n, days = 0; Решение 1
+n = +prompt("Сколько воды в баке ?");
+while(n>0) {
+    n -= 0.5;
+    if (n>=10)
+        n -= 0.5;
+    days ++;
+}
+alert (" Вода в баке закончится через" + days + "дней");
+*/ 
+
+var n, days = 0; // решение 2
+n = +prompt("Сколько воды в баке ?");
+while(n>0) {
+    days ++;
+    n -= 0.5;
+    if (n<10)
+    continue;
+    n-= 0.5;
+    
+}
+alert (" Вода в баке закончится через" + days + "дней");
+</script>
+
+</body>
+</html>
